@@ -1,15 +1,15 @@
 {
-  "name": "rr-queue",
+  "name": "rock-queue",
   "version": "1.0.0",
-  "description": "rr-queue",
+  "description": "rock-queue",
   "keywords": ["queue", "task", "auto"],
   "author": "rock <ll84273096@sina.com>",
-  "homepage": "https://github.com/ll84273096/rr-queue",
-  "repository": "git://github.com/ll84273096/rr-queue",
+  "homepage": "https://github.com/ll84273096/rock-queue",
+  "repository": "git://github.com/ll84273096/rock-queue",
   "license": "MIT",
   "main": "src/index.js",
   "bugs": {
-    "url": "https://github.com/ll84273096/rr-queue/issues",
+    "url": "https://github.com/ll84273096/rock-queue/issues",
     "email": "ll84273096@sina.com"
   },
   "scripts": {},

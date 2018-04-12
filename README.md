@@ -1,10 +1,10 @@
-# r-queue
-r-queue是一个任务队列管理框架，可以将复杂细碎的业务流程，拆分成多个任务模块，通过组合不同的任务模块，完成复杂的操作。
+# rock-queue
+rock-queue是一个任务队列管理框架，可以将复杂细碎的业务流程，拆分成多个任务模块，通过组合不同的任务模块，完成复杂的操作。
 
 ## Queue
 #### 如何使用Queue类
  ```js
-import { Queue, Task, QueueTask } from 'r-queue'
+import { Queue, Task, QueueTask } from 'rock-queue'
 
 // 实例化Queue
 const queue  =  new Queue()
@@ -60,7 +60,7 @@ queue.start(req, defaultRes).then((res) => {
 QueueTask继承自Task，可以将一个定义好的Queue实例转换为Task实例，可以达到Queue复用的目的。
 
 ```js
-import { Queue, QueueTask } from 'r-queue'
+import { Queue, QueueTask } from 'rock-queue'
 
 // 实例化Queue类，作为子队列
 const childQueue = new Queue()
@@ -97,7 +97,7 @@ queue.start().then((res) => {
  - EndIf
 
 ```js
-import { Queue, If, Else, ElseIf, EndIf } from 'r-queue'
+import { Queue, If, Else, ElseIf, EndIf } from 'rock-queue'
 
 // 实例化Queue
 const queue  =  new Queue()
@@ -130,7 +130,7 @@ queue.start().then(res => {
 
 ## Installation
 
-`npm install r-queue`
+`npm install rock-queue`
 
 
 ## MIT Licenced
