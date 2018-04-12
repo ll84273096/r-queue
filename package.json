@@ -2,11 +2,17 @@
   "name": "r-queue",
   "version": "1.0.0",
   "description": "r-queue",
-  "main": "src/index.js",
-  "scripts": {},
-  "repository": {},
+  "keywords": ["queue", "task", "auto"],
   "author": "rock <ll84273096@sina.com>",
+  "homepage": "https://github.com/ll84273096/r-queue",
+  "repository": "git://github.com/ll84273096/r-queue",
   "license": "MIT",
+  "main": "src/index.js",
+  "bugs": {
+    "url": "https://github.com/ll84273096/r-queue/issues",
+    "email": "ll84273096@sina.com"
+  },
+  "scripts": {},
   "devDependencies": {},
   "dependencies": {
     "error": "^7.0.2",
