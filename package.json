@@ -1,6 +1,6 @@
 {
   "name": "rock-queue",
-  "version": "1.0.0",
+  "version": "1.0.0-beta.1",
   "description": "rock-queue",
   "keywords": ["queue", "task", "auto"],
   "author": "rock <ll84273096@sina.com>",
