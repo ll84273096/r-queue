@@ -20,7 +20,8 @@
     "compile": "babel -d lib/ src/",
     "build": "webpack --mode production",
     "release2": "npm run build && npm publish ",
-    "release": "standard-version"
+    "release": "standard-version",
+    "my": "npm run release -- --prerelease beta && npm publish --tag prerelease"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
