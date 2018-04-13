@@ -1,6 +1,6 @@
 {
   "name": "rock-queue",
-  "version": "1.0.0-beta.44",
+  "version": "1.0.0-beta.45",
   "description": "rock-queue",
   "keywords": [
     "queue",
@@ -21,7 +21,7 @@
     "build": "webpack --mode production",
     "release2": "npm run build && npm publish ",
     "release": "standard-version",
-    "my": "npm run release -- --prerelease beta && npm publish --tag prerelease"
+    "my": "npm run release -- --prerelease beta && npm publish"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
