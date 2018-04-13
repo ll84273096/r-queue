@@ -1,19 +1,33 @@
 {
   "name": "rock-queue",
-  "version": "1.0.0-beta.1",
+  "version": "1.0.0-beta.43",
   "description": "rock-queue",
   "keywords": ["queue", "task", "auto"],
-  "author": "rock <ll84273096@sina.com>",
+  "author": "rock <63911056@qq.com>",
   "homepage": "https://github.com/ll84273096/rock-queue",
   "repository": "git://github.com/ll84273096/rock-queue",
   "license": "MIT",
-  "main": "src/index.js",
+  "main": "lib/index.js",
   "bugs": {
     "url": "https://github.com/ll84273096/rock-queue/issues",
     "email": "ll84273096@sina.com"
   },
-  "scripts": {},
-  "devDependencies": {},
+  "scripts": {
+    "compile": "babel -d lib/ src/",
+    "build": "webpack --mode production",
+    "release": "npm run build && npm publish "
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-plugin-transform-es2015-modules-umd": "^6.24.1",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "webpack": "^4.5.0",
+    "webpack-cli": "^2.0.14",
+    "webpack-node-externals": "^1.7.2"
+  },
   "dependencies": {
     "error": "^7.0.2",
     "events": "^1.1.1",
