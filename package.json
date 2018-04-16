@@ -20,7 +20,7 @@
     "build": "webpack --mode production",
     "release": "standard-version",
     "preview": "npm run build && npm run release -- --prerelease beta && npm publish",
-    "toPublish": "npm run release -- --prerelease-as patch"
+    "toPublish": "npm run build && npm run release -- --prerelease-as patch && publish"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
