@@ -17,7 +17,7 @@
     "email": "ll84273096@sina.com"
   },
   "scripts": {
-    "build": "webpack --mode development",
+    "build": "webpack --mode production",
     "release": "standard-version",
     "lint": "eslint --ext .js src --fix",
     "toPreview": "npm run lint && npm run build && npm run release -- --prerelease beta && npm publish",
