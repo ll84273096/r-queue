@@ -1,6 +1,6 @@
 {
   "name": "rock-queue",
-  "version": "1.0.2-beta.0",
+  "version": "1.0.1-beta.1",
   "description": "rock-queue",
   "keywords": [
     "queue",
@@ -19,7 +19,7 @@
   "scripts": {
     "build": "webpack --mode production",
     "release": "standard-version",
-    "preview": "npm run build && npm run release -- --prerelease beta && npm publish",
+    "toPreview": "npm run build && npm run release -- --prerelease beta && npm publish",
     "toPublish": "npm run build && npm run release -- --prerelease-as patch && publish"
   },
   "devDependencies": {
