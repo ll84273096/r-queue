@@ -5,10 +5,14 @@ class ConditionalTask extends Task {
   createCompiler (fn) {
     return (queueData, resolve, reject) => {
       if (_.isFunction(fn)) {
-        fn(queueData.getReq(), queueData.getRes(), (res) => {
+        const resolveHandler = (res) => {
           this.onChangeSkipStatus(!res, queueData)
           resolve(queueData.getRes())
-        }, reject)
+        }
+        fn(queueData.getReq(), queueData.getRes(), resolveHandler, reject)
+        setTimeout(() => {
+          resolveHandler(this.getDefaultSkipStatus())
+        })
       } else {
         this.onChangeSkipStatus(!fn, queueData)
         resolve(queueData.getRes())
@@ -17,6 +21,9 @@ class ConditionalTask extends Task {
   }
   onChangeSkipStatus (isSkip, queueData) {
     queueData.setSkip(isSkip)
+  }
+  getDefaultSkipStatus () {
+    return true
   }
 }
 

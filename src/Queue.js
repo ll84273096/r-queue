@@ -1,7 +1,8 @@
 // import Error from '../../error'
-import {QueueTask, Task} from './task'
+import {Task} from './task'
 import QueueData from './QueueData'
 import {error} from './error'
+import QueueTask from './task/base/QueueTask'
 
 const OVER_TIME = 10000
 

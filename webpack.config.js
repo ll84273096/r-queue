@@ -1,18 +1,18 @@
 const path = require('path')
-const webpack = require('webpack')
 const nodeExternals = require('webpack-node-externals')
 
 module.exports = {
   entry: './src/index',
   output: {
+
     path: path.join(__dirname, 'lib'),
     filename: 'index.js',
-    libraryTarget: "umd",
+    libraryTarget: 'umd'
   },
   target: 'node',
   externals: [nodeExternals()],
   module: {
-    rules:[
+    rules: [
       {
         test: /\.js$/,
         loader: 'babel-loader',
