@@ -1,3 +1,8 @@
 src
+test
 webpack.config.js
+.idea
 .babelrc
+.eslintrc.js
+.eslintignore
+CHANGELOG.md

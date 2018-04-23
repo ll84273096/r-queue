@@ -22,7 +22,7 @@
     "lint": "eslint --ext .js src --fix",
     "test": "mocha",
     "toPreview": "npm run lint && npm run build && npm run release -- --prerelease beta && npm publish",
-    "toPublish": "npm run build && npm run release -- --prerelease-as patch && publish"
+    "toPublish": "npm run build && npm run release -- --prerelease-as patch && npm publish"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
