@@ -1,8 +1,8 @@
 src
 test
-webpack.config.js
+build
+package-lock.json
 .idea
 .babelrc
 .eslintrc.js
 .eslintignore
-CHANGELOG.md
