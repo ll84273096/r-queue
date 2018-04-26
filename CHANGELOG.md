@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.0.1-beta.13"></a>
+## [1.0.1-beta.13](https://github.com/ll84273096/rock-queue/compare/v1.0.1-beta.12...v1.0.1-beta.13) (2018-04-26)
+
+
+
 <a name="1.0.1-beta.12"></a>
 ## [1.0.1-beta.12](https://github.com/ll84273096/rock-queue/compare/v1.0.1-beta.11...v1.0.1-beta.12) (2018-04-26)
 
