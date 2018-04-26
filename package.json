@@ -43,6 +43,7 @@
     "error": "^7.0.2",
     "events": "^1.1.1",
     "merge": "^1.2.0",
+    "rock-error": "^1.0.8",
     "underscore": "^1.8.3"
   }
 }

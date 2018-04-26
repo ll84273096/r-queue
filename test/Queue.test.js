@@ -14,4 +14,13 @@ describe('测试Queue类', () => {
       done()
     })
   })
+  it('queue中的task没有调用next方法抛出超时异常', (done) => {
+    const queue = new Queue()
+    queue.push((req, res, next) => {})
+    queue.start().then((res) => {}).catch(error => {
+      assert.ok(error instanceof Error)
+      assert.ok(error.code === 1001)
+      done()
+    })
+  })
 })

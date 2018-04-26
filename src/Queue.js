@@ -1,7 +1,7 @@
 // import Error from '../../error'
 import {Task} from './task'
 import QueueData from './QueueData'
-import {error} from './error'
+import error from './error'
 import QueueTask from './task/base/QueueTask'
 
 const OVER_TIME = 10000
@@ -38,7 +38,9 @@ class Queue {
       const queueData = new QueueData(req, defaultRes)
       this.next(0, queueData, resolve, reject)
       setTimeout(() => {
-        reject(error(101, {title: 'queue'}))
+        const err = error(1001, {title: 'queue'})
+        console.log(err)
+        reject(err)
       }, OVER_TIME)
     })
   }
